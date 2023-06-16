@@ -1,0 +1,307 @@
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Bangers', cursive; */
+font-family: 'Barlow', sans-serif;
+font-family: 'Roboto', sans-serif;
+/* font-family: 'Roboto Mono', monospace; */
+font-family: 'Tillana', cursive;
+font-family: 'Turret Road', cursive;
+}
+
+:root {
+    --varred: rgba(232,65,65,255);
+    --varborder: solid 3px black;
+    --vartransition: all .2s ease-in-out;
+}
+
+/* Start of Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px;
+    /* border: var(--varborder); */
+    border: solid 4px red;
+    /* box-shadow: inset 0px 0px 0px 3px var(--varred); */
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.headerdivlogo {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
+
+.headerdivlogo img {
+    height: 7vh;
+}
+
+#headerMenu {
+    /* padding-bottom: .5%; */
+    width: 25%;
+    margin-right: 1%;
+}
+
+#headerMenu a {
+    font-size: 20px;
+    font-weight: 400;
+    border: solid rgb(236, 53, 53);
+    border-width: 0px 0px 3px 0px;
+    border-radius: 0%;
+    padding: 1%;
+    transform: ease-in;
+    color: black;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
+    background: linear-gradient(to right top, red, red 40%, rgb(0, 0, 0) 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 200%;
+    background-position: 100%;
+    transition: background-position 450ms ease;
+}
+
+#headerMenu a:hover {
+    background-position: 0 100%;
+}
+
+/* For Splide */
+.frontOfStoreImg {
+    height: 48.3vh;
+    width: 100%;
+}
+
+#secondFrontImg {
+    height: 100%;
+    background-image: url('/imgs/second\ front\ dark\ neighborhood.jpg');
+    background-size: cover;
+}
+
+#firstFrontImg {
+    height: 100%;
+    background-size: cover;
+    background-image: url('/imgs/front\ of\ business\ dark.jpg');
+}
+
+#firstFrontImg h2 {
+    padding-left: 10%;
+    padding-top: 18%;
+    color: rgb(223, 215, 215);
+    font-size: 50px;
+}
+
+#secondFrontImg h2 {
+    padding-left: 10%;
+    padding-top: 18%;
+    color: rgb(223, 215, 215);
+    font-size: 50px;
+}
+
+
+/* End of header/nav */
+
+#backgroundimg {
+    /* margin-top: 6.3%; */
+    /* height: 50vh; */
+    height: 80vh;
+    background-size: cover;
+    /* border: solid rgb(189, 22, 22);
+    border-width: 10px 0px 10px 0px; */
+    z-index: 99;
+    background-image: url('/imgs/second\ front\ dark\ neighborhood.jpg');
+    text-align: center;
+}
+
+#backgroundimg h2 {
+    color: white;
+    padding-top: 20%;
+    font-size: 55px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#backgroundimg h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* #backgroundimg img {
+    width: 100%;
+    border: var(--varborder);
+} */
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+
+
+    /* For scroll effect */
+    overflow-x: hidden;
+	overflow-y: auto; 
+	perspective: 1px;
+	-webkit-perspective: 1px; 
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+main {
+    /* background-image: url('/imgs/front\ of\ business\ dark.jpg'); */
+
+    /* background-color: rgb(0, 0, 0); */
+    width: 100vw;
+	height: 160vh;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+    z-index: 1;
+    /* background-image: linear-gradient(60deg, rgb(70, 70, 70),  rgb(235, 235, 235)); */
+}
+
+/* main:after {
+    background-image: url("/imgs/merged\ fronst.jpg");
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	content: "";
+	transform: translateZ(-1px) scale(3);
+	-webkit-transform: translateZ(-1px) scale(3);
+} */
+
+/* Start of Location and Hours */
+
+#locationAndHours {
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 1);
+    /* box-shadow: inset 0px 0px 0px 3px var(--varred); */
+    border: solid rgb(189, 22, 22);
+    border-width: 0px 10px 0px 10px;
+    z-index: 0;
+}
+
+.headerStyle {
+    border: solid rgb(224, 19, 19);
+    border-width: 0px 0px 3px 0px;
+    width: fit-content;
+    font-size: 40px;
+}
+
+#googleMaps {
+    width: 99.5%;
+    height: 32vh;
+}
+
+#googleMapsDiv {
+    border: solid 3px black;
+    width: 100%;
+}
+
+#hoursList {
+    padding-top: 25%;
+}
+
+/* For Services */ 
+
+.mainContent {
+    border: solid rgb(146, 142, 142);
+    border-width: 0px 0px 3px 0px;
+}
+
+#servicesList {
+    width: 100%;
+}
+
+.servicesListItem {
+    width: 18%;
+    text-align: center;
+}
+
+.servicesListItem a {
+    color: rgb(44, 44, 44);
+}
+
+/* For Reviews */
+
+#reviewsH1 {
+    margin-bottom: 3%;
+}
+
+.reviewIcon {
+    color: rgb(212, 188, 53);
+}
+
+.reviewCard {
+    height: 28vh;
+    padding: 4%;
+    border: solid 3px red;
+    background-color: white;
+    border-radius: 5%;
+    width: 95%;
+}
+
+.reviewCardHeader {
+    text-align: center;
+}
+
+.reviewCard p {
+    margin-top: 4%;
+    font-size: 17px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.reviewCard h3 {
+    margin-bottom: 1%;
+}
+
+/* For photos */
+
+/* For Footer */
+
+footer {
+    width: 100%;
+    height: 9vh;
+    background-color: black;
+}
+
+/* For effects/scroll/animations */ 
+
+html {
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+/* For Flex */
+
+@media screen and (max-width: 820px) { 
+    .headerdivlogo {
+        justify-content: center;
+    }
+    #locationAndHours {
+        width: 100%;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+}

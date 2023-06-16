@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uptown Service</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@500&family=Tillana:wght@600&family=Turret+Road:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<div class="ui secondary massive menu" id="headerMain">
+    <a class="item" id="titleCustom" href="/">
+        <img src="imgs/phillips66logo.com-phillips-66-logologobrand-logoiconslogos-251519939580gjdkt-476475458">
+    </a>
+    <a class="item">
+        <img src="imgs/small uptown text.jpg" id="smallUptownText">
+    </a>
+    <div class="right menu" id="headerMenu">
+        <a class="item">
+            Location & Hours
+        </a>
+        <a class="item">
+            Contact
+        </a>
+        <a class="item">
+            Services
+        </a>
+        <a class="item">
+            About
+        </a>
+        <script>
+            $('#themeBtn')
+                .dropdown();
+        </script>
+    </div>
+    <style>
+        #headerMain {
+            z-index: 99;
+            position: fixed;
+            width: 101%;
+            background-color: white;
+        }
+
+        #smallUptownText {
+            height: 5vh;
+            width: 26vh;
+        }
+    </style>
+</div>
+
+<body>
+
+    <!-- <div id="backgroundimg">
+        <section class="splide" id="splide2" aria-label="Splide Basic HTML Example"
+        data-splide='{"type":"loop", "perPage":"1", "perMove":"1", "autoplay":"play", "speed":"2000" }'>
+        <div class="splide__track">
+          <ul class="splide__list" id="storeSplide">
+            <li class="splide__slide">
+                <div class="frontOfStoreImg">
+                    <div id="firstFrontImg">
+                        <h2>Award winning service...</h2>
+                    </div>
+                </div>
+            </li>
+            <li class="splide__slide">
+                <div class="frontOfStoreImg">
+                    <div id="secondFrontImg">
+                        <h2>Voted Best in SLC...</h2>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+      </div>
+      </section>
+      <script>
+       let splide2 = document.querySelector("#splide2");
+       new Splide(splide2, {
+        focus: 'center',
+        interval: 7000,
+    }).mount();
+      </script>
+    </div> -->
+
+    <main>
+        <div id="backgroundimg">
+            <h2>Uptown Service</h2>
+            <h3>Award Winning Service For 80 Years</h3>
+        </div>
+
+        <style>
+            #servicesDiv {
+                border: solid red;
+                border-width: 10px 0px 10px 0px;
+                margin-top: 10px;
+                background-color: white;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .serviceImages {
+                width: 100%;
+            }
+        </style>
+
+        <div id="mainDiv">
+            <div class="ui stackable grid">
+                <div id="serviceDiv">
+
+                    <div class="sixteen wide column ">
+                        <h1 class="headerStyle">Services:</h1>
+                        <h3>For car service, we offer a first-come first-serve service. The earlier you drop your car
+                            off,
+                            the
+                            quicker it will be done*. Services offered are: Inspection/Emission On the spot registration
+                            renewals Oil Changes (full service) Brakes Radiators Timing Belts Shocks/Struts Ball Joints
+                            Tire
+                            Repair Tire Mounting and Balancing A/C Service Batteries Propane Refill/ Rencertification
+                            And
+                            much
+                            more!</h3>
+                    </div>
+                    <div class="sixteen wide column">
+                        <div class="ui horizontal list" id="servicesList">
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive gas pump icon "></i>
+                                </a>
+                                <h4>Fuel Pumps</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive oil can icon "></i>
+                                </a>
+                                <h4>Services</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive car battery icon "></i>
+                                </a>
+                                <h4>Batteries</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive wrench icon "></i>
+                                </a>
+                                <h4>Alternators</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive car icon "></i>
+                                </a>
+                                <h4>Emissions</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive gas pump icon "></i>
+                                </a>
+                                <h4>Fuel Pumps</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive oil can icon "></i>
+                                </a>
+                                <h4>Services</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive car battery icon "></i>
+                                </a>
+                                <h4>Batteries</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive wrench icon "></i>
+                                </a>
+                                <h4>Alternators</h4>
+                            </div>
+                            <div class="item servicesListItem">
+                                <a>
+                                    <i class="ui massive car icon "></i>
+                                </a>
+                                <h4>Emissions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        #serviceDiv {
+                            width: 100%;
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            padding-top: 3%;
+                            padding-bottom: 3%;
+                            background-color: white;
+                            border: solid rgb(160, 19, 19);
+                            border-width: 8px 0px 8px 0px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+        <div id="reviewsDivBack">
+        <div id="reviewsDiv">
+            <div class="ui stackable grid">
+                <div class="sixteen wide column">
+                    <h1 id="reviewsH1">What Our Customers Are Saying:</h1>
+                    <section class="splide" id="splide1" aria-label="Splide Basic HTML Example"
+                        data-splide='{"type":"loop", "perPage":"3", "perMove":"1", "speed":"700" }'>
+                        <div class="splide__track">
+                            <ul class="splide__list" id="storeSplide">
+                                <li class="splide__slide">
+                                    <div class="reviewCard">
+                                        <div class="reviewCardHeader">
+                                            <h3>Bart O.</h3>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                        </div>
+                                        <p>The best. I've been coming in here for the past 10 years or so and this place
+                                            makes me feel like I'm in a Norman Rockwell painting. Small town honest
+                                            vibes in
+                                            the heart of the city. Excellent service and attention to detail. Can't
+                                            recommend them enough!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="reviewCard">
+                                        <div class="reviewCardHeader">
+                                            <h3>Abby C.</h3>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                        </div>
+                                        <p>I had a great experience with Dale and James at Uptown Service. My car was
+                                            making
+                                            noises, they confirmed it needed a new wheel bearing. I dropped my car off
+                                            in
+                                            the morning and it was ready in a few hours! Great neighborhood mechanic
+                                            shop.
+                                            Highly recommended.
+
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="reviewCard">
+                                        <div class="reviewCardHeader">
+                                            <h3>Adam F.</h3>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                        </div>
+                                        <p>Stopped there this morning with a flat tire in a Jetta, which has lug nut
+                                            locks.
+                                            I just got this car and it had a jack and a full size spare tire, but no
+                                            wrench.
+                                            The guy at the shop let me use his, and even helped me get the lock off, and
+                                            didn't charge a thing. Super nice and didn't do it for anything other than
+                                            helping someone out. Will be coming back for sure.</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="reviewCard">
+                                        <div class="reviewCardHeader">
+                                            <h3>Alicia B.</h3>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                            <i class="ui star icon reviewIcon"></i>
+                                        </div>
+                                        <p>Great little shop! All I needed was to have my tire patched. I went on a
+                                            Wednesday morning and didn't have to wait in line. Cost was only $25.
+                                            Perfect.
+                                            While I was there, and since there was no line, I asked them to look at why
+                                            my
+                                            muffler/exhaust area was making such a loud noise. Well, they showed me that
+                                            it
+                                            was basically falling off AND getting jammed into some other part. They
+                                            couldn't
+                                            fix that but recommended Mr. Muffler to me.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="splide__progress">
+                            <div class="splide__progress__bar">
+                            </div>
+                        </div>
+                    </section>
+                    <script>
+                        let splide1 = document.querySelector("#splide1");
+                        new Splide(splide1, {
+                            // interval: 7000,
+                        }).mount();
+                    </script>
+
+                </div>
+            </div>
+            <style>
+                #reviewsDivBack {
+                    
+                }
+
+                #reviewsDiv {
+                    width: 100%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    margin-bottom: .7%;
+                    background-color: rgb(29, 29, 29);
+                    text-align: center;
+                    border: solid red;
+                    border-width: 7px 0px 7px 0px;
+                }
+
+                #reviewsH1 {
+                    color: white;
+                }
+            </style>
+            </div>
+        </div>
+
+
+        <div id="aboutDivBack">
+            <div id="aboutDiv">
+                <h1 class="headerStyle">About:</h1>
+                <div class="ui stackable grid">
+                    <div class="eight wide column">
+
+                    </div>
+                    <div class="eight wide column" id="aboutText">
+                        <h3>Uptown Service is family-owned and operated right here in SLC, UT. Since our company opened
+                            its
+                            doors in 1936, we've treated every customer like they were a part of our family. Other
+                            companies
+                            may
+                            offer similar services, but our services are the best, and come with a personal touch.<br>
+                            Dale started working at Uptown Service when he was 12 years old in 1969. Dale worked hard to
+                            learn
+                            the ropes and at 21 years of age bought the business. With a lifetime of automotive mechanic
+                            experience Dale is committed to providing customers with high quality and professional
+                            service.
+                        </h3>
+                    </div>
+                </div>
+                <style>
+                    #aboutDivBack {
+                        background-image: url('/imgs/front\ of\ business\ dark.jpg');
+                        transform: translateZ(-1px) scale(2.5);
+                        -webkit-transform: translateZ(-1px) scale(2.5);
+                        height: 60vh;
+                        transform-style: preserve-3d;
+                        -webkit-transform-style: preserve-3d;
+                        background-size: cover;
+                    }
+
+                    #aboutDiv {
+                        width: 100%;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        padding-top: 10%;
+                        padding-bottom: 3%;
+                        /* For parallax */
+
+
+                        height: 40vh;
+                        background-attachment: fixed;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        transform: translateZ(1px) scale(.4);
+                        -webkit-transform: translateZ(1px) scale(.4);
+                        perspective: 1px;
+                        -webkit-perspective: 1px;
+
+                    }
+
+                    #aboutText h3 {
+                        background-color: white;
+                        padding: 2%;
+                        border: solid 3px black;
+                        border-radius: 10px;
+                    }
+                </style>
+            </div>
+        </div>
+
+
+
+        <div id="picturesDiv">
+            <div class="ui stackable grid">
+                <div class="sixteen wide column">
+                    <h1 class="headerStyle">Pictures:</h1>
+                    <section class="splide" id="splide2" aria-label="Splide Basic HTML Example"
+                        data-splide='{"type":"loop", "perPage":"5", "perMove":"1", "speed":"700" }'>
+                        <div class="splide__track">
+                            <ul class="splide__list" id="storeSplide">
+                                <li class="splide__slide">
+                                    <div class="picturesImgs">
+                                        <img class="individualPics" src="/imgs/randomPhoto1.jpg">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="picturesImgs">
+                                        <img class="individualPics" src="/imgs/randomPhoto2.jpg">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="picturesImgs">
+                                        <img class="individualPics" src="/imgs/randomPhoto3.jpg">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="picturesImgs">
+                                        <img class="individualPics" src="/imgs/randomPhoto4.jpg">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <script>
+                let splide2 = document.querySelector("#splide2");
+                new Splide(splide2, {
+
+                }).mount();
+            </script>
+            <style>
+                #picturesDiv {
+                    width: 100%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    height: 45vh;
+                    background-color: white;
+                }
+
+                .pictureImgs {
+                    width: 95%;
+                    height: 95%;
+                }
+
+                .individualPics {
+                    width: 95%;
+                    height: fit-content;
+                }
+            </style>
+        </div>
+
+
+
+        <div id="locationDiv">
+            <div class="ui stackable grid">
+                <div class="eight wide column ">
+                    <h1 class="headerStyle">Location & Hours:</h1>
+                    <h3>Address: 2276 E 2100 S <br>Salt Lake City, UT, 84109</h3>
+                    <div id="googleMapsDiv">
+                        <iframe id="googleMaps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217193.7494082289!2d-111.90753516589822!3d40.73121405453476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875261466aef658f%3A0xd79e4a2a4e42db64!2sPhillips%2066!5e0!3m2!1sen!2sus!4v1678318117030!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="eight wide column ">
+                    <div class="ui relaxed list" id="hoursList">
+                        <div class="item">
+                            <h3>Monday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Tuesday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Wednesday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Thursday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Friday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Saturday: 8:00 AM - 5:00 PM</h3>
+                        </div>
+                        <div class="item">
+                            <h3>Sunday: Closed</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                #locationDiv {
+                    width: 100%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    background-color: rgb(255, 255, 255);
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    /* border: solid red;
+                    border-width: 10px 10px 10px 10px; */
+                }
+            </style>
+        </div>
+        <footer>
+
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
